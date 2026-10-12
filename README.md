@@ -1,1 +1,1 @@
-# kmou-mast.github.io
+# kmou-fint.github.io
