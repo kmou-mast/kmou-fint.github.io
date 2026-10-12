@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>MAST · Maritime Autonomy Science & Technology</title>
-<meta name="description" content="MAST (Maritime Autonomy Science & Technology), a joint laboratory at Korea Maritime & Ocean University — ship hydrodynamics and control (CFD) and collision avoidance for autonomous ships.">
+<title>FINT · Maritime Autonomy Science & Technology</title>
+<meta name="description" content="FINT (Fluid dynamics and Intelligent Navigation Technologies), a joint laboratory at Korea Maritime & Ocean University — ship hydrodynamics and control (CFD) and collision avoidance for autonomous ships.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -222,7 +222,7 @@ footer .left{display:flex;align-items:center;gap:14px}
 
 <header>
   <div class="wrap bar">
-    <a class="brand" href="#home" aria-label="MAST home">
+    <a class="brand" href="#home" aria-label="FINT home">
       <img src="img/kmou_logo.png" alt="Korea Maritime &amp; Ocean University" onerror="this.nextElementSibling.remove();this.remove()">
       <span class="sep"></span>
       <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
@@ -232,7 +232,7 @@ footer .left{display:flex;align-items:center;gap:14px}
         <circle cx="17" cy="5" r="2.4" fill="#C46F12"/>
         <path d="M5 29c3-2 5-2 8 0s5 2 8 0 5-2 8 0" stroke="#A7C3CF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
       </svg>
-      <span><b>MAST</b><small id="lab-full"></small></span>
+      <span><b>FINT </b><small id="lab-full"></small></span>
     </a>
     <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav">
@@ -302,7 +302,7 @@ footer .left{display:flex;align-items:center;gap:14px}
   <section id="about">
     <div class="wrap">
       <div class="page-head">
-        <h1>About MAST</h1>
+        <h1>About FINT </h1>
         <p>연구실 소개</p>
       </div>
       <div style="max-width:720px">
@@ -458,7 +458,7 @@ footer .left{display:flex;align-items:center;gap:14px}
    ========================================================= */
 
 const LAB = {
-  name: "MAST",
+  name: "FINT",
   full: "Maritime Autonomy Science & Technology",
   univ: "Korea Maritime & Ocean University",
   division: "Division of Navigation Convergence Studies",   // 항해융합학부 영문 표기 — 확인 후 수정
@@ -648,7 +648,7 @@ const AWARDS = [
 ];
 
 const NEWS = [
-  { date:"2026-10-09", en:"MAST website launched.", ko:"MAST 연구실 홈페이지를 열었습니다." },
+  { date:"2026-10-09", en:"FINT website launched.", ko:"FINT 연구실 홈페이지를 열었습니다." },
   { date:"2025-09-01", en:"[News item in English]", ko:"[국문 소식]" }
 ];
 
@@ -888,7 +888,7 @@ $("#apply").addEventListener("submit", async e => {
   const f = e.target, st = $("#apply-status");
   if (!f.reportValidity()) return;
   const d = Object.fromEntries(new FormData(f).entries());
-  const subject = `[MAST] Application enquiry – ${d.name}`;
+  const subject = `[FINT] Application enquiry – ${d.name}`;
   const body = `Name: ${d.name}\nE-mail: ${d.email}\nAffiliation / status: ${d.affiliation}\nArea of interest: ${d.area}\n\n${d.message}`;
   if (LAB.formEndpoint){
     st.textContent = "Sending…";
